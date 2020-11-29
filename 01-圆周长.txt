@@ -1,0 +1,12 @@
+'填空完成程序，使得当在Text1中输入圆的半径后，单击"计算"按钮，计算圆的周长，并在Text2中显示出来。
+'注：请不要更改原程序结构，删除①、②、③，并在对应的位置填写正确代码
+
+Private Sub Command1_Click()
+    Const pi = 3.14     '圆周率
+    Dim c As Single     '周长
+    Dim r As Single     '半径
+    r = Val(Text1.Text)
+    c = pi * r * 2
+    Text2.Text = Str(c)
+End Sub
+

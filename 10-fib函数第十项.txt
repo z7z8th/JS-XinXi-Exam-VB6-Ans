@@ -1,0 +1,16 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Public Function fib(n As Integer) As Integer
+    If (n = 1) Or (n = 2) Then
+        fib = 1
+    Else
+        fib = fib(n - 1) + fib(n - 2)
+    End If
+End Function
+
+Private Sub Command1_Click()
+    Dim s  As Integer
+    s = fib(10)
+    Print "s="; s
+End Sub
+

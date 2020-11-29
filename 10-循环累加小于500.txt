@@ -1,0 +1,17 @@
+'填空完成程序，使得单击窗体后，计算出1+2+3+…+N<500的N的最大值，并在文本框Text1中显示出来。
+'注：请不要更改源程序结构，删除①、②、③，并在对应位置填写正确的代码
+
+Private Sub Form_Click()
+    Dim s As Integer     '累加器
+    Dim n As Integer
+    '为n赋初值
+    n = 0
+    '为s赋初值
+    s = 0
+    Do While s < 500
+        n = n + 1
+        s = s + n
+    Loop
+    Text1.Text = Str(n - 1)
+End Sub
+

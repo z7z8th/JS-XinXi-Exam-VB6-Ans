@@ -1,0 +1,14 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Dim a As Integer
+    Dim b As Integer
+    Dim c As Integer
+    Dim max As Integer
+    a = Val(Text1.Text)
+    b = Val(Text2.Text)
+    c = Val(Text3.Text)
+    If a > b Then max = a Else max = b
+    If c > max Then max = c
+    Label3.Caption = Str(max)
+End Sub

@@ -1,0 +1,23 @@
+'完善程序，使之能够随机产生10个100以内的整数，并找其中的最大数、最小数。
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Dim a(10) As Integer
+    Dim max As Integer
+    Dim min As Integer
+    Randomize
+    Print "产生10个随机整数:";
+    For i = 1 To 10
+        a(i) = Int(Rnd * 100)
+        Print a(i);
+    Next i
+    Print
+    min = a(1)
+    max = min
+    For i = 2 To 10
+        If a(i) < min Then min = a(i)
+        If a(i) > max Then max = a(i)
+    Next i
+    Print "最大数："; max, "最小数："; min
+End Sub
+

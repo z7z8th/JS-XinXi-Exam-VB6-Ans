@@ -1,0 +1,22 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Dim cj(10) As Single
+    Dim i As Integer
+    Dim max As Single
+    Dim min As Single
+    For i = 1 To 10
+        cj(i) = Val(InputBox("请输入10个学生的成绩", "成绩输入"))
+    Next i
+    max = cj(1)
+    min = cj(1)
+    For i = 2 To 10
+        If cj(i) > max Then
+            max = cj(i)
+        End If
+        If cj(i) < min Then
+            min = cj(i)
+        End If
+    Next i
+    Print max, min
+End Sub

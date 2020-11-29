@@ -1,0 +1,23 @@
+'本题是在text1中输入一位十六进制数码（若是字母要大写），
+'运行程序后能译出它表示的十进制数的程序。
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+  Dim m As String
+  m = Text1.Text
+  Select Case m
+    Case "A"
+     m = "10"
+    Case "B"
+     m = "11"
+    Case "C"
+     m = "12"
+    Case "D"
+     m = "13"
+    Case "E"
+     m = "14"
+    Case "F"
+     m = "15"
+  End Select
+  Text2.Text = m
+End Sub

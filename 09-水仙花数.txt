@@ -1,0 +1,16 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Dim i As Integer
+    Dim a As Integer   '百位数
+    Dim b As Integer   '十位数
+    Dim c As Integer   '个位数
+    For i = 100 To 999
+      a = i \ 100
+      b = (i - a * 100) \ 10
+      c = i Mod 10
+      If a * a * a + b * b * b + c * c * c = i Then
+        Print i
+      End If
+    Next i
+End Sub

@@ -1,0 +1,14 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Dim x As Integer
+    Dim s As Integer   '累加器
+    Dim i As Integer
+    s = 0
+    For i = 1 To 10
+        x = Val(InputBox("NO." & i))
+        s = s + x
+        Print Str(x)
+    Next i
+    Print "total:"; s
+End Sub

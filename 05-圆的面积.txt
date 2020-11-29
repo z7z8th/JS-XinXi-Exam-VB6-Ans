@@ -1,0 +1,14 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Const pi = 3.14
+    Dim r As Single
+    Dim s As Single
+    r = Val(Text1.Text)
+    s = pi * r * r
+    Text2.Text = s
+End Sub
+
+Private Sub Form_Load()
+
+End Sub

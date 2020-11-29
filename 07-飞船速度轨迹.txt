@@ -1,0 +1,17 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Dim v As Single
+    v = Val(InputBox("请输入飞船速度的值"))
+    Select Case v
+        Case Is > 16.67
+            Label1.Caption = "飞船挣脱太阳引力飞出太阳系"
+        Case Is >= 11.19
+            Label1.Caption = "飞船离开地球的控制,围绕太阳转"
+        Case Is >= 7.91
+            Label1.Caption = "飞船绕地球似做匀速圆周运动"
+        Case Else
+            Label1.Caption = "输入数据错误！"
+    End Select
+End Sub
+

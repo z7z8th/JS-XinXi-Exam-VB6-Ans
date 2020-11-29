@@ -1,0 +1,14 @@
+'填空完成程序，编程计算1+1/2+1/3+1/4...+1/99+1/100，单击窗体后，在窗体上显示结果。
+'注：请不要更改源程序结构，删除①、②、③，并在对应位置填写正确的代码。
+
+Private Sub Form_Click()
+    Dim s As Single     '累加器
+    Dim i As Integer    '循环变量
+    s = 0
+    For i = 1 To 100
+        s = s + 1 / i
+    Next i
+    Print "s="; Str(s)
+End Sub
+
+

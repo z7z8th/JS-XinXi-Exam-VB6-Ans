@@ -1,0 +1,19 @@
+'填空完成程序，问：鸡兔同笼，共有100条腿，40个头，问鸡有几只，兔有几只?
+'单击窗体后，在窗体上显示结果。
+'注：请不要更改源程序结构，删除①、②、③，并在对应位置填写正确的代码。
+
+Private Sub Form_Click()
+    Dim ji As Integer                '鸡的个数
+    Dim tu As Integer                '兔的个数
+    Dim leg As Integer               '腿数
+    For ji = 1 To 39
+        tu = 40 - ji
+        '计算腿数
+        leg = ji * 2 + tu * 4
+        '如果腿正好100只，则打印。
+        If leg = 100 Then
+            Print "鸡="; ji; "只", "兔="; tu; "只"
+        End If
+    Next ji
+End Sub
+
