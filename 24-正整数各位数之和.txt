@@ -1,0 +1,18 @@
+'输入一个正整数，计算并输出它的各位数字之和。
+'如输入123，则输出6。
+'以下程序使用文本框Text1输入正整数，使用文本框Text2输出计算结果，
+'请在程序的两个空格处填上相应的字句，使之完成相应的功能。
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Dim x As Integer
+    Dim s As Integer
+    x = Val(Text1.Text)
+    s = 0
+    Do
+        s = s + x Mod 10
+        x = x \ 10
+    Loop Until x = 0
+    Text2.Text = Str(s)
+End Sub
+

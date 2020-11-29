@@ -1,0 +1,13 @@
+'填空完成程序，使得当单击窗体后，Label1上显示100以内（含100）偶数之和。
+'注：请不要更改源程序结构，删除①、②、③，并在对应位置填写正确的代码。
+
+Private Sub Form_Click()
+    Dim i As Integer   '定义变量i
+    Dim s As Integer   '定义变量s，用于存放100以内（含100）偶数的和
+    s = 0
+    For i = 2 To 100 Step 2
+        s = s + i
+    Next i
+    Label1.Caption = Str(s)
+End Sub
+

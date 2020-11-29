@@ -1,0 +1,15 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Public Function s(n As Integer) As Integer
+    If n = 1 Then
+        s = 1
+    Else
+        s = n + s(n - 1)
+    End If
+End Function
+
+Private Sub Command1_Click()
+    Dim sum   As Integer
+    sum = s(100)
+    Print "sum="; sum
+End Sub

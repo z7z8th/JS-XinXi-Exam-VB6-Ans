@@ -1,0 +1,16 @@
+'某公司2005年的总产值为2000万元，若总产值以每年5%的速度增长，多少年后总产值翻一倍？
+'填空完成程序，使得当单击窗体后，在窗体上输出问题答案。
+'注：请不要更改源程序结构，删除①、②、③，并在对应位置填写正确的代码
+
+Private Sub Form_Click()
+    Dim p As Single     '年产值
+    Dim n As Integer    '年数
+    p = 2000
+    n = 0
+    Do While p < 4000
+        p = p * 1.05
+        n = n + 1
+    Loop
+    Print "n="; Str(n)
+End Sub
+
