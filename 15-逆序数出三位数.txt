@@ -1,0 +1,15 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Dim a As Integer
+    Dim b As Integer
+    Dim bai As Integer
+    Dim shi As Integer
+    Dim ge As Integer
+    a = Val(Text1.Text)
+    bai = a \ 100
+    shi = (a - bai * 100) \ 10
+    ge = a Mod 10
+    b = ge * 100 + shi * 10 + bai
+    Text2 = Str(b)
+End Sub

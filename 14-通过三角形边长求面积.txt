@@ -1,0 +1,15 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Dim s As Single
+    Dim q As Single
+    Dim a As Single
+    Dim b As Single
+    Dim c As Single
+    a = Val(InputBox("请输入边长a的值："))
+    b = Val(InputBox("请输入边长b的值："))
+    c = Val(InputBox("请输入边长c的值："))
+    q = (a + b + c) / 2
+    s = Sqr(q * (q - a) * (q - b) * (q - c))
+    Print s
+End Sub

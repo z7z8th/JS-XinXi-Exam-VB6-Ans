@@ -1,0 +1,15 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Dim s1 As Single
+    Dim s2 As Single
+    Dim v1 As Single
+    Dim v2 As Single
+    Dim t As Single
+    s1 = Val(InputBox("请输入王晓珊家离学校的距离："))
+    v1 = Val(InputBox("请输入王晓珊步行速度："))
+    v2 = Val(InputBox("请输入李明步行速度："))
+    t = s1 / v1
+    s2 = v2 * t
+    Print s2
+End Sub

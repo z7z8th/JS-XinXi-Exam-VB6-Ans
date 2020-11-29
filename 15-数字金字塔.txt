@@ -1,0 +1,15 @@
+'运行程序能够显示数字金字塔，请完善程序。
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Form_Click()
+    Dim i As Integer
+    Dim j As Integer
+    For i = 1 To 5
+      Print Tab(10 - i);
+      For j = 1 To i
+        Print j;
+      Next j
+      Print
+    Next i
+End Sub
+

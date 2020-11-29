@@ -1,0 +1,18 @@
+'填空完成程序，计算s=1!+2!+3!+…+8!的值并在窗体上打印出结果。
+'注：请不要更改源程序结构，删除①、②、③，并在对应位置填写正确的代码
+
+Private Sub Form_Click()
+    Dim s As Single
+    Dim p As Single
+    Dim i As Integer
+    '给s赋初值
+    s = 0
+    '给p赋初值
+    p = 1
+    For i = 1 To 8
+        p = p * i
+        s = s + p
+    Next i
+    Print "s="; Str(s)
+End Sub
+
