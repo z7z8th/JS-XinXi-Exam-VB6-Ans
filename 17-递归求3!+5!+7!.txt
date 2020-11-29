@@ -1,0 +1,16 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Public Function fac(a As Integer) As Integer
+    If a = 1 Then
+        fac = 1
+    Else
+        fac = a * fac(a - 1)
+    End If
+End Function
+
+Private Sub Command1_Click()
+    Dim s  As Integer
+    s = fac(3) + fac(5) + fac(7)
+    Print "s="; s
+End Sub
+

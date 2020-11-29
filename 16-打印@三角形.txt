@@ -1,0 +1,20 @@
+'填空完成程序，使得单击"显示"按钮后，显示下面的图形：
+'@
+'@@
+'@@@
+'@@@@
+'@@@@@
+'@@@@@@
+'注：请不要更改原程序结构，删除①、②、③，并在对应位置填写正确的代码
+
+Private Sub Command1_Click()
+    Dim i As Integer
+    Dim j As Integer
+    For i = 1 To 6
+        For j = 1 To i
+            Print "@";
+        Next j
+        Print
+    Next i
+End Sub
+

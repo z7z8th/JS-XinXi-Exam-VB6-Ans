@@ -1,0 +1,20 @@
+'这是一个简单的显示评语程序，填空完成程序，在文本框Text1中输入一个数后，单击"评语"按钮，在标签Label1显示评语。
+'当输入一个小于60的数时，显示"不及格"；
+'当输入一个大于等于60且小于85的数时，显示"良好"；
+'当输入一个大于等于85的数时，显示"优秀"。
+'注：请不要更改原程序结构，删除①、②、③，并在对应位置填写正确的代码
+
+Private Sub Command1_Click()
+    Dim cj As Single      '成绩
+    cj = Val(Text1.Text)
+    If cj < 60 Then
+         Label1.Caption = "不及格"
+    End If
+    If cj >= 60 And cj < 85 Then
+          Label1.Caption = "良好"
+    End If
+    If cj >= 85 Then
+          Label1.Caption = "优秀"
+    End If
+End Sub
+

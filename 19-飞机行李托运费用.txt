@@ -1,0 +1,17 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+  Dim w As Integer    '行李重量
+  Dim pj As Integer   '机票价格
+  Dim fy As Single    '托运费用
+  w = Val(Text1.Text)
+  pj = Val(Text2.Text)
+  If w <= 20 Then
+    fy = 0
+  Else
+    fy = (w - 20) * pj * 0.015
+  End If
+  Text3.Text = fy
+End Sub
+
+
