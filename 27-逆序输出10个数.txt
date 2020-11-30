@@ -1,0 +1,11 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Dim s(9) As Single
+    For i = 0 To 9
+        s(i) = Val(InputBox("请输入一个数"))
+    Next i
+    For i = 9 To 0 Step -1
+        Print s(i)
+    Next i
+End Sub

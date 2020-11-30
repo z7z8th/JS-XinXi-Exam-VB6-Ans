@@ -1,0 +1,17 @@
+'下面程序是利用字符的ASCⅡ码译码的加密方法，
+'完善程序，使之能完成样张的加密功能。
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+Dim x As String
+Dim y As String
+Dim s As String
+    s = ""
+    x = Text1.Text
+    For i = 1 To Len(x)
+        y = Asc(Mid(x, i, 1))
+        s = s & y
+    Next i
+    Text2.Text = s
+End Sub
+

@@ -1,0 +1,18 @@
+'填空完成程序，左键单击窗体时打印下面所示的图案。
+'****
+'***
+'**
+'*
+'注：请不要更改原程序结构，删除①、②、③，并在对应位置填写正确的代码
+
+Private Sub Form_Click()
+    Dim i As Integer
+    Dim j As Integer
+    For i = 4 To 1 Step -1
+        For j = 1 To i
+            Print "*";
+        Next j
+        Print
+    Next i
+End Sub
+

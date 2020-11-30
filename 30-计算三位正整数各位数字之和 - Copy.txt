@@ -1,0 +1,12 @@
+'请不要更改源程序的结构，删除原题里的①、②、③、④。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Dim a As Integer
+    Dim s As Integer
+    a = Val(Text1.Text)
+    For i = 1 To 3
+        s = s + a Mod 10
+        a = Int(a / 10)
+    Next
+    Label1.Caption = Str(s)
+End Sub

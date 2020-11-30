@@ -1,0 +1,16 @@
+'举重比赛中，60公斤级选手体重不能超过60公斤。
+'填空完成程序，使得在文本Text1中输入一个大于60的数时，标签Label1显示"超重！不能参赛！"；
+'当输入一个小于等于60的数时，标签Label1显示"合格，可以参赛！"。
+'注：请不要更改原程序结构，删除①、②、③，并在对应位置填写正确的代码
+
+Private Sub Command1_Click()
+    Dim t As Single   '体重
+    t = Val(Text1.Text)
+    If t > 60 Then
+       Label1.Caption = "超重！不能参赛！"
+    Else
+       Label1.Caption = "合格，可以参赛！"
+    End If
+End Sub
+
+

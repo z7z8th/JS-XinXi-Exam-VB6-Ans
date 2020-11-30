@@ -1,0 +1,14 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Dim x As Single
+    Dim s As Single
+    x = Val(Text1.Text)
+    If x >= 10 Then
+      s = 4 * x * 0.8
+    Else
+      s = 4 * x
+    End If
+    Label1.Caption = Str(s)
+End Sub
+
