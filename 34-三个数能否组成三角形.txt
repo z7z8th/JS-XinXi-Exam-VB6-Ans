@@ -1,0 +1,17 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub cmdCalc_click()
+    Dim a As Integer
+    Dim b As Integer
+    Dim c As Integer
+    a = Val(Text1.Text)
+    b = Val(Text2.Text)
+    c = Val(Text3.Text)
+    If (a + b > c) And (a + c > b) And (b + c > a) Then
+      Text4.Text = "YES"
+    Else
+      Text4.Text = "NO"
+    End If
+End Sub
+
+

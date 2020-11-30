@@ -1,0 +1,23 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Dim a As Single
+    Dim b As Single
+    Dim c As Single
+    Dim p As Single
+    Dim x1 As Single
+    Dim x2 As Single
+    a = Val(Text1.Text)
+    b = Val(Text2.Text)
+    c = Val(Text3.Text)
+    p = b * b - 4 * a * c
+    If p >= 0 Then
+        x1 = (-b + Sqr(p)) / (2 * a)
+        x2 = (-b - Sqr(p)) / (2 * a)
+        Print "x1="; x1
+        Print "x2="; x2
+    Else
+        Print "该方程无实数根"
+    End If
+End Sub
+

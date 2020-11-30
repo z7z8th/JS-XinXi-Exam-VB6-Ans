@@ -1,0 +1,9 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Dim a As Integer
+    Dim s As Integer
+    a = Val(Text1.Text)
+    s = (Int(a / 300)) * 200
+    Label1.Caption = Str(s)
+End Sub

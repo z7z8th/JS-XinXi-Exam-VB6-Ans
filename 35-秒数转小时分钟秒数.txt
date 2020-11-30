@@ -1,0 +1,15 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Dim h As Integer
+    Dim m As Integer
+    Dim s As Integer
+    Dim ss As Integer
+    ss = Val(Text1.Text)
+    h = ss \ 3600
+    m = (ss - h * 3600) \ 60
+    s = (ss - h * 3600) Mod 60
+    Label1.Caption = Str(h)
+    Label2.Caption = Str(m)
+    Label3.Caption = Str(s)
+End Sub
