@@ -1,0 +1,19 @@
+'回文字符串是指一个字符串从左往右读与从右往左读是一样的，
+'如"ABCBA"，"123321"等等。
+'编写程序，输入一个字符串，若是回文字符串，则输出"YES"，否则输出"NO"。
+'以下程序使用文本框Text1输入字符串，使用文本框Text2输出结果，
+'请在程序的两个空格处填上相应的字句，使之完成相应的功能。
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Dim s As String
+    Dim ok As String
+    Dim i As Integer
+    s = Text1.Text
+    ok = "Yes"
+    For i = 1 To Len(s) \ 2
+    If Mid(s, i, 1) <> Mid(s, Len(s) - i + 1, 1) Then ok = "No"
+    Next i
+    Text2.Text = ok
+End Sub
+

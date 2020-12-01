@@ -1,0 +1,15 @@
+'这是打印乘法九九表的程序，请完善程序。
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Form_click()
+    Dim i As Integer
+    Dim j As Integer
+    For i = 1 To 9
+        For j = 1 To i
+            Print Tab((j - 1) * 12);
+            Print j; "*"; i; "="; j * i;
+        Next j
+        Print
+    Next i
+End Sub
+

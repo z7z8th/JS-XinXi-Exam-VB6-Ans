@@ -1,0 +1,14 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Dim i As Integer
+    Dim j As Integer
+    For i = 1 To 4
+      Print Tab(6 - i);
+      For j = 1 To 5
+        Print "*";
+      Next j
+      Print
+    Next i
+End Sub
+

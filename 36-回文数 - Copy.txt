@@ -1,0 +1,20 @@
+'回文数是类似383、12321这样的数,不论是从左向右顺读,
+'还是从右向左倒读，数码的排列都是相同的。
+'完善程序，判断输入的数是否是回文数。
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Dim a As String
+    Dim n As Integer
+    Dim i As Integer
+    a = Text1.Text
+    n = Len(a)
+    For i = 1 To n \ 2
+        If Mid(a, i, 1) <> Mid(a, n - i + 1, 1) Then i = n
+    Next i
+    If i = n \ 2 + 1 Then
+        Label2.Caption = "是回文数"
+    Else
+        Label2.Caption = "不是回文数"
+    End If
+End Sub

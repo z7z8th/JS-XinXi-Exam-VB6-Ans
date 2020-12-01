@@ -1,0 +1,11 @@
+'请不要更改源程序的结构，删除原题里的①、②、③。填写正确的代码，使程序完善
+
+Private Sub Command1_Click()
+    Dim x As Integer
+    x = Val(Text1.Text)
+    If x Mod 3 = 2 Then
+        If x Mod 5 = 3 Then
+            Print x
+        End If
+    End If
+End Sub
